@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="cleaned-styles.css">
+    <title>My Portfolio</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1e40af",
+              secondary: "#1e3a8a",
+              accent: "#3b82f6",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md fixed w-full z-10">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold text-primary"
+          >El<span class="text-secondary">HOUSSAM</span></a
+        >
+
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-xl text-primary"></i>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="#Services"
+            class="text-gray-700 hover:text-primary transition"
+            >Services</a
+          >
+          <a
+            href="#Projects"
+            class="text-gray-700 hover:text-primary transition"
+            >Projects</a
+          >
+          <a href="#Contact" class="text-gray-700 hover:text-primary transition"
+            >Contact</a
+          >
+        </nav>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white py-2 px-4 shadow-lg"
+      >
+        <a href="#Services" class="block py-2 text-gray-700 hover:text-primary"
+          >Services</a
+        >
+        <a href="#Projects" class="block py-2 text-gray-700 hover:text-primary"
+          >Projects</a
+        >
+        <a href="#Contact" class="block py-2 text-gray-700 hover:text-primary"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          Software Developer
+        </h2>
+        <h3 class="text-xl md:text-2xl text-gray-600 mb-8">
+          Enjoying Building Software Solutions
+        </h3>
+        <a
+          href="#Projects"
+          class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg font-medium transition inline-block mb-8"
+          >View My Work</a
+        >
+
+        <div class="flex justify-center space-x-6">
+          <a
+            href="https://www.linkedin.com/in/elhoussam/"
+            target="_blank"
+            class="text-gray-600 hover:text-primary text-2xl"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.github.com/elhoussam/"
+            target="_blank"
+            class="text-gray-600 hover:text-primary text-2xl"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://stackoverflow.com/cv/elhoussam"
+            target="_blank"
+            class="text-gray-600 hover:text-primary text-2xl"
+          >
+            <i class="fab fa-stack-overflow"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            class="text-gray-600 hover:text-primary text-2xl"
+          >
+            <i class="fab fa-codepen"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="Services" class="py-16 px-4 bg-white">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          Services
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div
+            class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition"
+          >
+            <div class="text-4xl text-primary mb-4">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-800">
+              UI/UX Design
+            </h3>
+            <p class="text-gray-600">
+              Sketching and designing user-friendly interfaces for your software
+            </p>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div
+            class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition"
+          >
+            <div class="text-4xl text-primary mb-4">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-800">
+              Development
+            </h3>
+            <p class="text-gray-600">
+              Developing scalable and extensible solutions for your workflow
+            </p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div
+            class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition"
+          >
+            <div class="text-4xl text-primary mb-4">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-800">DB Design</h3>
+            <p class="text-gray-600">
+              Designing relational databases according to your needs
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Projects" class="py-16 px-4 bg-gray-50">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          Projects
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Project 1 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-primary to-secondary flex items-center justify-center project-card-bg"
+              style="background-image: url(images/cybermanager.jpg);"
+            >
+              <h3 class="text-white text-xl font-bold project-title">
+                Cyber Manager
+              </h3>
+            </div>
+            <div class="p-4">
+              <a
+                href="https://github.com/elhoussam/CafeManagmentTool"
+                target="_blank"
+                class="text-primary hover:text-secondary font-medium"
+                >View Code</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-primary to-secondary flex items-center justify-center project-card-bg"
+              style="background-image: url(images/gazoilapp.jpg);"
+            >
+              <h3 class="text-white text-xl font-bold project-title">
+                Gas-oil App
+              </h3>
+            </div>
+            <div class="p-4 flex space-x-6">
+              <a
+                href="https://github.com/elhoussam/GGAO"
+                target="_blank"
+                class="text-primary hover:text-secondary font-medium"
+                >View Code</a
+              >
+              <a
+                href="https://github.com/elhoussam/GGAO"
+                target="_blank"
+                class="text-primary hover:text-secondary font-medium ml-4"
+                >Guide</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-primary to-secondary flex items-center justify-center project-card-bg"
+              style="background-image: url(images/guidemeapp.jpg);"
+            >
+              <h3 class="text-white text-xl font-bold project-title">
+                Guide Me
+              </h3>
+            </div>
+            <div class="p-4">
+              <a
+                href="https://github.com/elhoussam/GuideMe"
+                target="_blank"
+                class="text-primary hover:text-secondary font-medium"
+                >View Code</a
+              >
+              <a
+                href="https://elhoussam.github.io/GuideMe/"
+                target="_blank"
+                class="text-primary hover:text-secondary font-medium ml-4"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-primary to-secondary flex items-center justify-center project-card-bg"
+              style="background-image: url(images/foodify.jpg);"
+            >
+              <h3 class="text-white text-xl font-bold project-title">
+                Foodify
+              </h3>
+            </div>
+            <div class="p-4">
+              <a
+                href="https://github.com/elhoussam/Forkify"
+                target="_blank"
+                class="text-primary hover:text-secondary font-medium"
+                >View Code</a
+              >
+              <a
+                href="https://myfoodify.netlify.app/"
+                target="_blank"
+                class="text-primary hover:text-secondary font-medium ml-4"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="py-16 px-4 bg-white">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          Let's work together
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+          <!-- Contact Card 1 -->
+          <div
+            class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition"
+          >
+            <div class="text-4xl text-primary mb-4">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-800">Phone</h3>
+            <p class="text-gray-600">+213 696 477 241</p>
+          </div>
+
+          <!-- Contact Card 2 -->
+          <div
+            class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition"
+          >
+            <div class="text-4xl text-primary mb-4">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-800">Email</h3>
+            <p class="text-gray-600">
+              <a
+                href="mailto:nouarkherkhachihoussam@gmail.com"
+                class="text-primary hover:text-secondary"
+                >ElHoussam</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+      <div class="container mx-auto text-center">
+        <p class="mb-4">
+          Copyrights @ <span class="font-semibold">ElHoussam</span>
+        </p>
+        <div class="flex justify-center space-x-6">
+          <a
+            href="https://www.linkedin.com/in/elhoussam/"
+            target="_blank"
+            class="text-gray-300 hover:text-white text-xl"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.github.com/elhoussam/"
+            target="_blank"
+            class="text-gray-300 hover:text-white text-xl"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://stackoverflow.com/cv/elhoussam"
+            target="_blank"
+            class="text-gray-300 hover:text-white text-xl"
+          >
+            <i class="fab fa-stack-overflow"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            class="text-gray-300 hover:text-white text-xl"
+          >
+            <i class="fab fa-codepen"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

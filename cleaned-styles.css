@@ -1,0 +1,109 @@
+/* Dark mode styles */
+body.dark {
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+
+body.dark .bg-white {
+    background-color: #2d3748;
+}
+
+body.dark .text-gray-700 {
+    color: #e2e8f0;
+}
+
+body.dark .bg-blue-700 {
+    background-color: #2b6cb0;
+}
+
+body.dark .bg-gray-800 {
+    background-color: #1a202c;
+}
+
+body.dark .text-gray-400 {
+    color: #a0aec0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    nav, footer {
+        display: none;
+    }
+    
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12pt;
+    }
+    
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+}
+
+/* Table styles */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th {
+    background-color: #f3f4f6;
+    text-align: left;
+    padding: 0.75rem;
+    font-weight: 600;
+}
+
+.data-table td {
+    padding: 0.75rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.data-table tr:hover {
+    background-color: #f9fafb;
+}
+
+body.dark .data-table th {
+    background-color: #374151;
+}
+
+body.dark .data-table td {
+    border-top-color: #4b5563;
+}
+
+body.dark .data-table tr:hover {
+    background-color: #1f2937;
+}
+
+/* Project Card Styles */
+.project-card-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-title {
+    text-shadow: 1px 1px 2px #565656;
+    background-color: rgba(82, 103, 255, 0.44);
+    padding: 0 30px;
+    display: inline-block;
+    transform: skew(15deg, 2deg);
+}
